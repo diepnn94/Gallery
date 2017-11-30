@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SlidePreview</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="slidePreview.css">
+
+</head>
+
+<body onload="loadImages('flower/', 'carousel1'); loadImages('scenery/', 'carousel2');loadImages('inspirational/', 'carousel3')">
+  <nav class="navbar navbar-inverse" style="background:url(bg-body.jpg);border-radius:0px;padding:10px;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand " style="font-size:2vmax;" href="#">Collection Previews</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Preview</a></li>
+          <li><a href="#">Home</a></li>
+      </div>
+    </div>
+  </nav>
+  <!-- category 1 -->
+
+  <div class="container">
+    <center>
+      <h2>Collection1</h2></center>
+    <div class="row">
+      <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
+        <div id="myCarousel1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+          <div id="carousel1" class="carousel-inner ">
+          </div>
+          <br>
+          <p>Winter 2017 Collection Designed by ...</p>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1  col-sm-1 col-xs-1"></div>
+    </div>
+    <!-- category 2 -->
+
+    <br><br>
+    <div class="row">
+      <center>
+        <h2>Collection2</h2></center>
+      <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
+        <div id="myCarousel2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+          <div id="carousel2" class="carousel-inner ">
+          </div>
+          <br>
+          <p>Winter 2017 Collection Designed by ...</p>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1  col-sm-1 col-xs-1"></div>
+    </div>
+    <br><br>
+
+<!-- category 3 -->
+    <div class="row">
+      <center>
+        <h2>Collection3</h2></center>
+      <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
+        <div id="myCarousel3" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
+          <div id="carousel3" class="carousel-inner ">
+          </div>
+          <br>
+          <p>Winter 2017 Collection Designed by ...</p>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1  col-sm-1 col-xs-1"></div>
+    </div>
+
+    <br><br>
+  </div>
+  <center>
+    <footer>
+    <p>2017-2018 Collections</p>
+    <p>Designed by: ABCDE</p>
+  </footer>
+  </center>
+  <script src="slidePreview.js"></script>
+</body>
+
+</html>

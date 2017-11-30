@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="slideShow.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"> -->
+</head>
+
+<body onload="loadImages('flower/')">
+  <nav class="navbar navbar-inverse" style="background:url(bg-body.jpg);border-radius:0px;padding:10px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand " style="font-size:2vmax;" href="#">Image Gallery</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right" >
+        <li  style><a href="#" >Gallery</a></li>
+        <li><a href="#">Home</a></li>
+    </div>
+  </div>
+</nav>
+
+  <div class="container">
+    <br><br>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" onclick="loadImages('flower/')" href="javascript:void(0)">Flower</a></li>
+      <li><a data-toggle="tab" onclick="loadImages('scenery/')" href="javascript:void(0)">Scenery</a></li>
+      <li><a data-toggle="tab" onclick="loadImages('inspirational/')" href="javascript:void(0)">Inspirational</a></li>
+      <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <b class="caret"></b></a>
+            <ul class="dropdown-menu" style="height:200px; overflow-y:scroll">
+                <li><a onclick="loadImages('flower/')" href="javascript:void(0)" role="tab" data-toggle="tab">List1</a></li>
+                <li><a onclick="loadImages('scenery/')" href="javascript:void(0)"role="tab" data-toggle="tab">List2</a></li>
+                <li><a onclick="loadImages('inspirational/')" href="javascript:void(0)" role="tab" data-toggle="tab">List3</a></li>
+                <li><a onclick="loadImages('flower/')" href="javascript:void(0)" role="tab" data-toggle="tab">List4</a></li>
+                <li><a onclick="loadImages('scenery/')" href="javascript:void(0)"role="tab" data-toggle="tab">List5</a></li>
+                <li><a onclick="loadImages('inspirational/')" href="javascript:void(0)" role="tab" data-toggle="tab">List6</a></li>
+                <li><a onclick="loadImages('flower/')" href="javascript:void(0)" role="tab" data-toggle="tab">List7</a></li>
+                <li><a onclick="loadImages('scenery/')" href="javascript:void(0)"role="tab" data-toggle="tab">List8</a></li>
+                <li><a onclick="loadImages('inspirational/')" href="javascript:void(0)" role="tab" data-toggle="tab">List9</a></li>
+            </ul>
+    </li>
+    </ul>
+    <br>
+    <div class="row" id="gallery">
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="close cursor">
+        <span style="color:white;font-size:35px;" class="glyphicon glyphicon-remove " onclick="closeModal()"></span>
+      </div>
+      <div id="modalContent" class="modal-content">
+      </div>
+      <div id="slideShow" class="container" >
+      </div>
+    </div>
+    <br><br>
+
+    <script src="slideShow.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+@font-face {
+	font-family: 'forumregular';
+	src: url('fonts/forum-regular-webfont.eot');
+	src: url('fonts/forum-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('fonts/forum-regular-webfont.woff') format('woff'),  url('fonts/forum-regular-webfont.ttf') format('truetype'),  url('fonts/forum-regular-webfont.svg#forumregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@media all and (orientation: landscape){
+
+	.col{
+	  /*float:right;*/
+	  margin-left: 13vw;
+		/*margin:auto;*/
+		background-color: black;
+	  /*width:25%;*/
+	}
+  /*current one on displayed in slideshow on clicked*/
+	a{
+	  color:#c0bfbf;
+		font-family: 'forumregular';
+		font-size:2vh;
+		letter-spacing:2px;
+		text-decoration:none;
+		text-transform:uppercase;
+	}
+  .slideOnView{
+    max-height: 35vmax;
+    min-height: 35vmax;
+    width: 100%;
+		background-color: black;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 6vmax;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*overflow: auto;*/
+    overflow-y: scroll !important;
+    background-color: black;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 28vh;
+    width: auto;
+    padding: 10px;
+    /*margin-top: -50px;*/
+    text-shadow: 2px 2px 3px black;
+    color: white;
+    font-weight: bold;
+    font-size: 3vmax;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+@media all and (orientation: portrait){
+	.col{
+	  /*float:right;*/
+	  margin-left: 20vw;
+		/*margin:auto;*/
+		background-color: black;
+	  /*width:25%;*/
+	}
+	a{
+	  color:#c0bfbf;
+		font-family: 'forumregular';
+		font-size:3vw;
+		letter-spacing:2px;
+		text-decoration:none;
+		text-transform:uppercase;
+	}
+  .slideOnView{
+    max-height: 35vmax;
+    min-height: 35vmax;
+    width: 100%;
+		background-color: black;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20vmax;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*overflow: auto;*/
+    overflow-y: scroll !important;
+    background-color: black;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 18vh;
+    width: auto;
+    padding: 10px;
+    /*margin-top: -50px;*/
+    text-shadow: 2px 2px 3px black;
+    color: white;
+    font-weight: bold;
+    font-size: 3vmax;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+/*the images listed in the page; preview of the pics*/
+.galleryImg{
+  max-height: 13vmax;
+  min-height: 13vmax;
+  width:100%;
+}
+
+
+
+/*the images on the slideshow (5) images of preview*/
+.slidesImg{
+  width: 10vw;
+  min-height: 8vw;
+  max-height: 8vw;
+  opacity: 0.6;
+}
+.slidesImg:hover{
+  cursor:pointer;
+  opacity: 1;
+}
+.galleryImg:hover{
+  cursor: pointer;
+  border: 1px solid rgb(124, 150, 195);
+}
+.caption{
+	background-color: black;
+  font-size: 1vmax;
+}
+
+.close {
+  color:white;
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+.modal-content {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  max-width: 1200px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.mySlides {
+  /*display: none;*/
+  /*width: 100%;*/
+	background-color: black;
+  /*height: 30vmax;*/
+}
